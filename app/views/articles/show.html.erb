@@ -1,0 +1,17 @@
+<div>
+    <h1><%= @article.title%></h1>
+    <p><%= @article.body %></p>
+</div>
+<div>
+    <ul>
+        <li>
+            <%= link_to "Edit Article", edit_article_path%>
+        </li>
+        <li>
+            <%= link_to "Delete Article", article_path(@article), data: {
+                turbo_method:"Delete",
+                turbo_confirm:"Are you sure?"
+            }%>
+        </li>
+    </ul>
+</div>
