@@ -5,7 +5,7 @@
     </div>
     <div>
         <h2><%= form.label :body %></h2>
-        <%= form.text_field :body %>
+        <%= form.text_area :body %>
     </div>
         <h2><%= form.label :status %></h2>
         <%= form.select :status, ['public','private','archived'], selected:'public' %>

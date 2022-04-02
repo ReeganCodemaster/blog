@@ -1,6 +1,14 @@
-<div>
-    <h2><%= comment.commenter%></h2>
-</div>
-<div>
-    <p><%= comment.body%></p>
-</div>
+<li>
+    <div>
+        <h2><%= comment.commenter%></h2>
+    </div>
+    <div>
+        <p><%= comment.body%></p>
+    </div>
+    <div>
+        <%= link_to "Delete comment", [comment.article, comment], data:{
+            turbo_method:"Delete",
+            turbo_confirm:"Are you sure?"
+        }%>
+    </div>
+</li>

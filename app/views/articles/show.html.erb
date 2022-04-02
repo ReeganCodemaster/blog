@@ -18,9 +18,12 @@
 
 <div>
     <h1>Comments</h1>
-    <%= render @article.comments%>
+    <ul>
+        <%= render @article.comments%>
+    </ul>
 </div>
 
 <div>
+    <h1>Create a new comment</h1>
     <%= render "comments/form"%>
 </div>
