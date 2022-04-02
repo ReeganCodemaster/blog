@@ -7,6 +7,8 @@
         <h2><%= form.label :body %></h2>
         <%= form.text_field :body %>
     </div>
+        <h2><%= form.label :status %></h2>
+        <%= form.select :status, ['public','private','archived'], selected:'public' %>
     <div>
         <%=form.submit%>
     </div>
